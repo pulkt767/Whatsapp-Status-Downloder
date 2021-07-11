@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".saved"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved Status"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:textColor="#fff"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/save_recycle"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/line"
+            />
+
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Status Available"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:fontFamily="serif-monospace"
+        android:visibility="gone"
+        />
+</RelativeLayout>

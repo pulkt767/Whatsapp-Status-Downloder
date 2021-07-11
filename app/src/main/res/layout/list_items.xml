@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:id="@+id/myImage"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:foregroundGravity="center"
+        android:layout_marginRight="10dp"
+        />
+
+        <View
+            android:id="@+id/line"
+            android:layout_below="@+id/myImage"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#000"
+            android:layout_marginTop="-20dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.3"
+            />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/myImage"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/download"
+        app:backgroundTint="@android:color/white"
+        android:backgroundTint="@android:color/transparent"
+        app:borderWidth="1dp"
+        />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagex"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:background="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.1"
+        />
+</RelativeLayout>
